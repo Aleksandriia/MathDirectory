@@ -1,11 +1,25 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Эта ссылка загружает с CDN все необходимые файлы Bootstrap --> <!--
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>
+	<!-- Перед закрывающим тегом <body> подключаем jQuery, Popper и Bootstrap JS, чтобы работали интерактивные компоненты  --><!--
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>-->
+
+		<!-- Подключение bootstrap из папки --> <!--
+		<link href="bootstrap-5.1.3-dist/css/bootstrap.css">
+		<link href="bootstrap-5.1.3-dist/js/bootstrap.js">-->
+		<!-- ------------------------------------------------------- -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> <!-- Font Awesome -->
 		<link rel="stylesheet" href="css/normalize.css"> <!-- CSS reset -->
 		<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap Grid -->
@@ -16,8 +30,7 @@
 
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
-	<title>Регистрация</title>
+	<title>Контакты</title>
 </head>
 <body>
 	<header id="main-nav">
@@ -72,40 +85,33 @@
 	<section id="header">
 		<div class="container">
 			<div class="row">
-				<form method="POST" action="" class="form-group" id="autoriz">
-					<divstyle="float: center;">
-						<section id="plan">
-							<p style="margin-left: 25px;">Имя:</p>
-							<input type="text" name="Name" required>
-							<p style="margin-left: 25px; margin-top: 10px;">Фамилия:</p>
-							<input type="text" name="Surname" required>
-							<p style="margin-left: 25px; margin-top: 10px;">Отчество:</p>
-							<input type="text" name="Patronymic" required>
-							<p style="margin-left: 25px; margin-top: 10px;">Название учебного заведения:</p>
-							<input type="text" name="NameEducation" required>
-							<p style="margin-left: 25px; margin-top: 10px;">Группа:</p>
-							<input type="text" name="NumbGroup" required>
-							<p style="margin-left: 25px; margin-top: 10px;">Выберите роль:</p> <!-- class="subtitle" -->
-			          <div class="toggle-container cf">
-			            <div class="switch-toggles">
-			              <div class="individual">Студент</div> <!-- active -->
-			              <div class="company">Преподаватель</div>
-			            </div>
-			          </div>
-		          <div style="margin-top: -60px;">
-			          <p style="margin-left: 25px;">Login:</p>
-								<input type="text" name="LogIn" required>
-								<p style="margin-left: 25px; margin-top: 10px;">Password:</p>
-								<input type="password" name="passWord" required>
-							</div>
-							<input class="btn btn-blue" style="margin-top: 15px; position: relative; left: 27%;" type="submit" name="RegistrationBtn" value="Зарегистрироваться">
-							<br>
-							<p style="position: relative; left: 7.7%; margin-top: 10px;">Уже есть аккаунт? <a href="index_autorizatia.html">Авторизоваться</a></p>
-	          </section>
-				</form>
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<h1 class="wow fadeInUp">Появился вопрос?</h1> <br><br>
+					<p class="wow fadeInUp" data-wow-delay=".2s">Позвони по телефону <a href="#">8-999-999-99-99</a></p>
+					<p class="wow fadeInUp" data-wow-delay=".2s">Или напиши на почту: <a href="#">test_pochta@test.ru</a></p>
+				</div>
+			</div>
+		</div> 
+	</section> <!-- //Header --> 
+
+	<section id="subscribe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="subtitle"></p>
+					<h2>Подпишитесь на рассылку</h2>
+					<form action="">
+						<div class="form-group">
+							<input type="email" placeholder="Ваш Email">
+							<a href="#" class="btn btn-green">Подписаться</a>
+						</div>
+					</form>
+					<p class="promise">Обещаем не присылать спам.</p>
+				</div>
 			</div>
 		</div>
-	</section><!-- //Header -->
+		</div>
+	</section><!-- //Subscribe -->
 
 	<footer id="footer">
 		<div class="container footer-container">
